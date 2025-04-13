@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<htmd>
+    <l lang="en">
+<heameta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            border: 2px solid black;
+        }
+
+        .header, .nav, .footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #f9d6ec;
+        }
+
+        .nav {
+            background-color: #d528dfe6;
+            color: white;
+            padding: 10px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left-panel {
+            width: 70%;
+            background-color: #d8a8d8;
+            padding: 40px;
+            text-align: center;
+            background-color: #f385fb;
+        }
+
+        .main-content {
+            width: 100%;
+            background-color:white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #d8a8d8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="nav">Navigation Bar</div>
+        <div class="content">
+            <div class="left-panel">Left Panel</div>
+            <div class="main-content">Main Content</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+
+        
+        .container {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            background: rgb(241, 244, 246);
+            padding: 10px;
+        }
+
+        .header, .footer {
+            background: #b0cdd3;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        
+        .main {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        
+        .intro {
+            background: #b0cdd3;
+            flex: 2;
+            padding: 20px;
+            margin-right: 10px;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+
+        .hero-image {
+            background: #b0cdd3;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .cta {
+            background: rgb(210, 240, 122);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        
+        .features {
+            background: #b0cdd3;
+            padding: 20px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .more-copy {
+            background: #b0cdd3;
+            flex: 2;
+            padding: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+
+        <div class="main">
+            <div class="intro">Intro Copy</div>
+            <div class="hero">
+                <div class="hero-image">Hero Image</div>
+                <button class="cta">Call to Action</button>
+            </div>
+        </div>
+
+        <div class="features">Features</div>
+
+        <div class="content">
+            <div class="more-copy">More Copy</div>
+            <button class="cta">Call to Action</button>
+        </div>
+
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Web Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: lightgray; 
+      }
+
+      .wrapper {
+        width: 80%; 
+        max-width: 800px;
+      }
+
+      header {
+        background-color: orange;
+        padding: 30px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      nav {
+        background-color: blue;
+        width: 10%;
+        padding: 100px;
+        color: white;
+        text-align: center;
+      }
+
+      article {
+        background-color: green;
+        width: 80%;
+        padding: 180px;
+        color: white;
+        text-align: center;
+      }
+
+      footer {
+        background-color: brown;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Header</header>
+      <div class="container">
+        <nav>Nav</nav>
+        <article>Article</article>
+      </div>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
